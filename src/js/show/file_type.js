@@ -5,6 +5,7 @@ var docExt = new Array(".doc",".docx");//word文件的后缀名
 var xlsExt = new Array(".xls",".xlsx");//excel文件的后缀名
 var cssExt = new Array(".css");//css文件的后缀名
 var jsExt = new Array(".js");//js文件的后缀名
+var txtExt = new Array(".txt");//js文件的后缀名
 
 //获取文件名后缀名
 String.prototype.extension = function(){

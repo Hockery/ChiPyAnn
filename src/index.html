@@ -5,15 +5,62 @@
     <title>
         abc.html
     </title>
+    <link href="css/libs/jquery-ui.css" rel="stylesheet">
+    <style>
+
+        #icons {
+            margin: 0;
+            padding: 0;
+        }
+        #icons li {
+            margin: 2px;
+            position: relative;
+            padding: 4px 0;
+            cursor: pointer;
+            float: left;
+            list-style: none;
+        }
+        #icons span.ui-icon {
+            float: left;
+            margin: 0 4px;
+        }
+
+        #ul_text {
+            margin: 0;
+            padding: 0;
+        }
+        #ul_text li {
+            margin: 0px;
+            position: relative;
+            padding: 1px 1px;
+            cursor: pointer;
+            float: left;
+            list-style: none;
+            height:28px;
+        }
+
+        #ul_text .ui-selecting { background: #FECA40; }
+        #ul_text .ui-selected { background: #F39814; color: white; }
+    </style>
     <script type="text/javascript" src="js/libs/vue.js"></script>
     <script type="text/javascript" src="js/libs/jquery-3.3.1.min.js"></script>
-    
+    <script type="text/javascript" src="js/libs/jquery-ui.js"></script>
+
 </head>
 
 <body>
-<div id='abc'>图片.txt</div>
-<script type="text/javascript" src="js/show/file_type.js"></script>
-<script type="text/javascript" src="js/show/show.js"></script>
+    <div id='abc'>图片.txt</div>
+    <div id='text'></div>
+    <span>您已经选择了：</span> <span id="select-result">无</span>。
+    <ol id="ul_text" class="ui-widget ui-helper-clearfix">
+    </ol>
+    <ul id="icons" class="ui-widget ui-helper-clearfix">
+        <li class="ui-state-default ui-corner-all" title=".ui-icon-minus"><span class="ui-icon ui-icon-minus"></span></li>
+        <li class="ui-state-default ui-corner-all" title=".ui-icon-caret-1-sw"><span class="ui-icon ui-icon-caret-1-sw"></span></li>
+        <li class="ui-state-default ui-corner-all" title=".ui-icon-caret-1-se"><span class="ui-icon ui-icon-caret-1-se"></span></li>
+    </ul>
+    <script type="text/javascript" src="js/show/file_type.js"></script>
+    <script type="text/javascript" src="js/show/show.js"></script>
 </body>
 
 </html>
